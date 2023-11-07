@@ -6,7 +6,7 @@ Brief introduction about the service, including its purpose and main features.
 
 #### Preview
 
-![Task Management Service Preview](/images/1.png "Service Preview")
+![Task Management Service Preview](/images/1.PNG "Service Preview")
 
 #### Technologies
 
