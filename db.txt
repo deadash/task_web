@@ -1,0 +1,10 @@
+-- Run this SQL script to create the tasks table in your SQLite database (task.db)
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TEXT NOT NULL,
+    creator TEXT NOT NULL,
+    branch TEXT NOT NULL,
+    svn_merge_number TEXT NOT NULL,
+    status TEXT NOT NULL
+);

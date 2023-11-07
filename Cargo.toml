@@ -1,0 +1,28 @@
+[package]
+name = "task_web"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "task_web"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.6.20"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+models.workspace = true
+sqlx.workspace = true
+anyhow.workspace = true
+
+[workspace]
+members = [
+    "frontend",
+    "models",
+]
+
+[workspace.dependencies]
+models = { path = "models" }
+sqlx = { version = "0.7.2", features = ["runtime-tokio-rustls", "macros", "sqlite"] }
+anyhow = "1.0"
